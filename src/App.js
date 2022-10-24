@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import ProductCard from './views/home/productCard';
 
 function App() {
   return (
+    /* (2) Update App.js to only return the homepage component. */
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <ProductCard />
+        
       </header>
     </div>
   );
 }
 
 export default App;
+
+//only return the homepage component from index.js

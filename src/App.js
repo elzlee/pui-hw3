@@ -1,16 +1,14 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import ProductCard from './views/home/productCard';
+import HomePage from './views/home/index.js';
 
 function App() {
   return (
     /* (2) Update App.js to only return the homepage component. */
     <div className="App">
-      <header className="App-header">
 
-        <ProductCard />
+        <HomePage />
         
-      </header>
     </div>
   );
 }

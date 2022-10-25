@@ -1,45 +1,60 @@
 import React, { Component } from 'react';
-//import './productCard.css';
+import '../../productCard.css';
 
 class ProductCard extends Component {
   render() {
     return (
-      <div className="notecard">         
-        <div className="notecard-left">
-          <div className="notecard-main-content">
-            <img className="notecard-thumbnail" src={this.props.imageURL}/>
-            <div className="notecard-text">
-              <div className="note-title-container">
-                <div className="note-title">
-                  {this.props.noteTitle}
+      <div className="productCard" >
+          <img className="notecard-thumbnail" src={this.props.imageURL} alt={this.props.productName}/>
+          
+          <div className="belowImage">
+            <h3>{this.props.productName}</h3>
+            
+            <div className="productDescriptionRow"> 
+              <div className="productDescriptionCol">
+                <div className="card-text"><p>Glazing:</p></div>
+              </div>
+              <div className="productDescriptionCol">
+                <select id="glazing-selector-1" >
+                </select>
+              </div>
+            </div>
+
+
+            <div className="productDescriptionRow" id="pack-size-row1">
+              <div className="productDescriptionCol">
+                <div className="card-text">
+                  <p>Pack Size:</p>
                 </div>
               </div>
-              <div className="note-body">
-                {this.props.noteBody}
+              <div className="pack-size-buttons">
+                  <input type="radio" id="packSize1" value="1" name="selection"  checked/>
+                  <label for="packSize1">1</label>
+
+                  <input type="radio" id="packSize3" value="3" name="selection" />
+                  <label for="packSize3">3</label>
+            
+                  <input type="radio" id="packSize6" value="6" name="selection" />
+                  <label for="packSize6">6</label>
+
+                  <input type="radio" id="packSize12" value="12" name="selection" />
+                  <label for="packSize12">12</label>
               </div>
             </div>
-          </div>
-          <div className="notecard-footer">
-            {this.props.noteFooter}
+            
+            <div className="productDescriptionRow" id="price-row1">
+              <div className="productDescriptionCol">
+                <h3 id="originalRollPrice">${this.props.productPrice}</h3>
+              </div>
+              <div className="productDescriptionCol">
+                <div className="add-to-cart-button">
+                  <div className="addtocart-text"><h3>Add To Cart</h3></div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div className="notecard-right">
-          <div className="icon icon-expand material-symbols-outlined">
-            expand_more
-          </div>
-          <div className="icon icon-collapse material-symbols-outlined">
-            expand_less
-          </div>
-          <div className="toolbar">
-            <div className="material-symbols-outlined icon icon-edit">
-              edit
-            </div>
-            <div className="material-symbols-outlined icon icon-delete">
-              delete
-            </div>
-          </div>
-        </div> 
-      </div>
     );
   }
 }

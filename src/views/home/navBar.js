@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import '../../pageHeader.css';
+import '../../navBar.css';
 
-class PageHeader extends Component {
+class NavBar extends Component {
   render() {
     return (
-      <div PageHeader>
+      <div NavBar>
         <div className="navbar"> 
-          <a className="selected navtab" href="#">PRODUCTS</a>
-          <a href="index.html" className="navtab">CART</a>  
+          <a className="selected navtab" href="index.html">PRODUCTS</a>
+          <a href="index.html" className="navtab" >CART</a>  
           
           <div id="cart-summary">
             <p id="line1">0 items</p>
@@ -25,7 +25,7 @@ class PageHeader extends Component {
   }
 }
 
-export default PageHeader
+export default NavBar
 
 
           

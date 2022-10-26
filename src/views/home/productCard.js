@@ -5,17 +5,23 @@ class ProductCard extends Component {
   render() {
     return (
       <div className="productCard" >
-          <img className="notecard-thumbnail" src={this.props.imageURL} alt={this.props.productName}/>
-          
+          <div className="theImage">
+            <img className="product-image" src={this.props.imageURL} alt={this.props.productName}/>
+          </div>
           <div className="belowImage">
-            <h3>{this.props.productName}</h3>
-            
+            <div className="productDescriptionRow">
+              <h3>{this.props.productName}</h3>
+            </div>
             <div className="productDescriptionRow"> 
               <div className="productDescriptionCol">
                 <div className="card-text"><p>Glazing:</p></div>
               </div>
               <div className="productDescriptionCol">
-                <select id="glazing-selector-1" >
+                <select className="glazing-selector" >
+                  <option value="Keep Original">Keep Original</option>
+                  <option value="Sugar Milk">Sugar Milk</option>
+                  <option value="Vanilla Milk">Vanilla Milk</option>
+                  <option value="Double Chocolate">Double Chocolate</option>
                 </select>
               </div>
             </div>
@@ -28,7 +34,7 @@ class ProductCard extends Component {
                 </div>
               </div>
               <div className="pack-size-buttons">
-                  <input type="radio" id="packSize1" value="1" name="selection"  checked/>
+                  <input type="radio" id="packSize1" value="1" name="selection" />
                   <label for="packSize1">1</label>
 
                   <input type="radio" id="packSize3" value="3" name="selection" />

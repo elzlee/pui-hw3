@@ -3,12 +3,16 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  display: grid;
+}
+h3 {
+  font-size: 30px;
 }
 /*----- product description organization (flexbox) ------------ */
 
-.belowThumbnail {
-  margin-left:50px;
+.belowImage {
   width:375px;
+  display:block;
 }
 
 .productDescriptionRow{
@@ -17,6 +21,7 @@
   flex-wrap: wrap;
   width: 100%;
   align-items:baseline;
+  text-align:left;
 }
 
 .productDescriptionCol{
@@ -24,19 +29,24 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  align-items:right;
 }
 
 
 
-.notecard-thumbnail {
+.product-image {
   width: 375px;
   height:375px;
   border-style: solid;
   border-width: thick;
   border-color: black;
-
+  
 }
 
+.theImage{
+  display:block;
+  text-align:left;
+}
 /*----- dropdown menu  ------------ */
 .dropdown-menu{
   width: 250px;

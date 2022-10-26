@@ -27,9 +27,7 @@ h1{
   text-align: left;
 }
 
-h3 {
-  font-size: 30px;
-}
+
 
 p {
   font-size: 20px;
@@ -63,6 +61,7 @@ hr {
   margin-right:2em;
 }
 
+/*
 .navbar {
   text-align:right; 
   vertical-align: middle;
@@ -71,6 +70,7 @@ hr {
 	background-color: #ffffff;
   position:relative;
 }
+
 
 
 .navbar a{
@@ -101,15 +101,18 @@ hr {
   color: black; 
 }
 
+
 .navtab{
   z-index:0;
 }
+*/
 
 #cart-summary{
   z-index: 1;
   margin-right: 110px;
 }
 
+/*popup css for later*/
 #itemAddedPopup{
   z-index: 2;
   border-style: solid;
@@ -123,19 +126,23 @@ hr {
   padding: 1px 10px;
 }
 
+/*popup css for later*/
 .popupBold{
   font-size: 15px;
   font-weight: bold;
 }
 
+/*popup css for later*/
 .popupBodyText{
   font-size: 15px;
 }
 
 /*------- product card list organization (flexbox)------------ */
-.productCardList {
-  margin: 100px;
+#productCardList {
+  margin-left: 200px;
+  margin-left: 200px;
   flex-wrap: wrap;
+  align-content:center;
 }
 
 .listing-row {
